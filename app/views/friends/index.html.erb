@@ -1,5 +1,5 @@
 
-
+<% if user_signed_in? %>
 
 
 <table class="table table-striped table-bordered table-hover">
@@ -41,3 +41,12 @@
 
 <%= link_to 'New Friend', new_friend_path, class:"btn btn-secondary" %>
 
+<% else %>
+
+<h1>About us..!!</h1>
+
+In this page you can create a login and add your own personal 
+friends circle along with their phone number. It allows you to sign up 
+and create an account and your your personalized friends diary. 
+
+<% end %>
